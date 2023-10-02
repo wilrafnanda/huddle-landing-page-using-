@@ -1,0 +1,160 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg) ;
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    font-family: sans-serif;  
+    
+}
+
+.logo{
+   max-width: 150px;
+}
+img{
+    max-width: 300px;
+    margin:50px;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+.page-info{
+    margin:50px ;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    
+}
+.main-container{
+    min-width: 390px;
+}
+
+.page-description{
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.page-title{
+   font-size: 1.65rem;
+   line-height: 2.23rem;
+}
+
+.display-flex{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 4rem;
+    /* border: solid; */
+    align-items: center;
+}
+.facebook,.twitter,.instagram{
+    border: solid white;
+    width: 20px;
+    border-radius:50% ;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 1px;
+    padding-right: 8px; 
+}
+svg:hover{
+    fill:hsl(300, 69%, 71%) ;
+}
+
+.instagram{
+    padding-top: 5px;
+}
+.instagram:hover{
+    border: solid hsl(300, 69%, 71%);  
+}
+.facebook:hover{
+    border: solid hsl(300, 69%, 71%); 
+}
+.twitter:hover{
+    border: solid hsl(300, 69%, 71%); 
+}
+
+/*****button*****/
+.page-button {
+    padding: 13px 70px;
+    border-radius: 50px;
+    border: none;
+    background-color:white ;
+    color: hsl(257, 40%, 49%) ;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 600;
+
+    cursor: pointer;
+    box-shadow: 1px 4px 9px 1px rgba(3, 3, 3, 0.6);
+}
+.page-button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+/* media query*/
+@media (min-width:630px){
+    .main-container{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    .page-info{
+        margin-left: 0;
+        max-width: 448px;
+        text-align: start;
+        
+       
+    }
+    .page-button {
+        /* \ */
+        border-radius: 50px;
+        border: none;
+        background-color:white ;
+        color: hsl(257, 40%, 49%) ;
+        font-family: 'Poppins', sans-serif ;
+        font-weight: 600;
+    
+        cursor: pointer;
+        box-shadow: 1px 4px 9px 1px rgba(3, 3, 3, 0.6);
+    }
+    body{
+        background-image: url(images/bg-desktop.svg);
+        /* background-size: contain;
+        background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .page-description{
+        margin-bottom: 15px;
+    }
+    .page-button{
+        margin-right: 80px;
+        padding: 13px 50px;
+    }
+    img{
+       max-width: 600px;
+    }
+    .display-flex{
+        justify-content: flex-end;
+        margin-top: 120px;
+    }
+    .logo{
+        max-width: 250px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    .page-title{
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+    .page-description{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    
+}
